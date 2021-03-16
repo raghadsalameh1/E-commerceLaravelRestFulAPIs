@@ -42,7 +42,7 @@ Laragon will take care of that. you can download the full edition from [here](ht
     ```
       php artisan serve
     ```
- 6. Open postman and import the collection of the endpoint. you can download it from [here](https://github.com/RaghadSalameh/E-commerceLaravelRestFullAPIs/blob/main/E-commerce%20restfull%20API%20Laravel.postman_collection.json)
+ 6. Open postman and import the collection of the endpoints. you can download it from [here](https://github.com/RaghadSalameh/E-commerceLaravelRestFullAPIs/blob/main/E-commerce%20restfull%20API%20Laravel.postman_collection.json)
 
  Have fun :) 
 
