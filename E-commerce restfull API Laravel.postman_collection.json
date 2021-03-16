@@ -1,0 +1,954 @@
+{
+	"info": {
+		"_postman_id": "ba2125e5-98ba-4f07-9938-d5af50f4ad26",
+		"name": "E-commerce restfull API Laravel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/users/1001",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users",
+								"1001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "reta",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "reta1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "reta",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "reta@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password_confirmation",
+									"value": "123456",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "admin",
+									"value": "true",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/users/201",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users",
+								"201"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/users/201",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"users",
+								"201"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Get all categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/categories",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/categories/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "cat",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "zxzc  fdsasdfdsa dasf sd fsd ",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/categories",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "reta",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "xzcx ddfd sdfdf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/categories/31",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories",
+								"31"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/categories/31",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories",
+								"31"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category's products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/categories/1/products",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories",
+								"1",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category's sellers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/categories/1/sellers",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories",
+								"1",
+								"sellers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category's transactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/categories/1/transactions",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories",
+								"1",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category's Buyers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/categories/1/buyers",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories",
+								"1",
+								"buyers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Get all products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products/31",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								"31"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product's buyers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products/31/buyers",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								"31",
+								"buyers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product's categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products/31/categories",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								"31",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add category to previews product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products/31/categories/11",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								"31",
+								"categories",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove category from previews product Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products/31/categories/11",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								"31",
+								"categories",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add transaction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products/564/buyers/6/transactions ",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								"564",
+								"buyers",
+								"6",
+								"transactions "
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show products Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products/31",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								"31"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Buyer",
+			"item": [
+				{
+					"name": "Get all Buyers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/buyers",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"buyers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Buyer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/buyers/4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"buyers",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buyer's transactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/buyers/4/transactions",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"buyers",
+								"4",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buyer's products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/buyers/4/products",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"buyers",
+								"4",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buyer's sellers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/buyers/4/sellers",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"buyers",
+								"4",
+								"sellers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buyer's categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/buyers/4/categories",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"buyers",
+								"4",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Seller",
+			"item": [
+				{
+					"name": "Get all Sellers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://firstrestfullapi.test/sellers",
+							"protocol": "http",
+							"host": [
+								"firstrestfullapi",
+								"test"
+							],
+							"path": [
+								"sellers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Seller",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://firstrestfullapi.test/sellers/4",
+							"protocol": "http",
+							"host": [
+								"firstrestfullapi",
+								"test"
+							],
+							"path": [
+								"sellers",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Seller's transactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://firstrestfullapi.test/sellers/3/transactions",
+							"protocol": "http",
+							"host": [
+								"firstrestfullapi",
+								"test"
+							],
+							"path": [
+								"sellers",
+								"3",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Seller's categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://firstrestfullapi.test/sellers/3/categories",
+							"protocol": "http",
+							"host": [
+								"firstrestfullapi",
+								"test"
+							],
+							"path": [
+								"sellers",
+								"3",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Seller's buyers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://firstrestfullapi.test/sellers/3/buyers",
+							"protocol": "http",
+							"host": [
+								"firstrestfullapi",
+								"test"
+							],
+							"path": [
+								"sellers",
+								"3",
+								"buyers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Seller's products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://firstrestfullapi.test/sellers/3/products",
+							"protocol": "http",
+							"host": [
+								"firstrestfullapi",
+								"test"
+							],
+							"path": [
+								"sellers",
+								"3",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://firstrestfullapi.test/sellers/3/products/1001",
+							"protocol": "http",
+							"host": [
+								"firstrestfullapi",
+								"test"
+							],
+							"path": [
+								"sellers",
+								"3",
+								"products",
+								"1001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "product 1",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "dfdfdssss sdfgfd sdfgfdsgb sfdgfdg",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/ASUS/Desktop/App center1.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://firstrestfullapi.test/sellers/3/products",
+							"protocol": "http",
+							"host": [
+								"firstrestfullapi",
+								"test"
+							],
+							"path": [
+								"sellers",
+								"3",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "productt 1",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "dfdfdssss sdfgfd sdfgfdsgb sfdgfdg",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "11",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://firstrestfullapi.test/sellers/3/products/1001",
+							"protocol": "http",
+							"host": [
+								"firstrestfullapi",
+								"test"
+							],
+							"path": [
+								"sellers",
+								"3",
+								"products",
+								"1001"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"item": [
+				{
+					"name": "Get all transactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/transactions",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transactions' categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/transactions/1/categories",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"transactions",
+								"1",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show transaction",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/transactions/31",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"transactions",
+								"31"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transaction's seller",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/transactions/1/sellers",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"transactions",
+								"1",
+								"sellers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
