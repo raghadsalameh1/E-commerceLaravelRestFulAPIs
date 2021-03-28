@@ -1,4 +1,4 @@
-# E-commerce restfull APIs ![version-badge]
+# E-commerce restful APIs ![version-badge]
 
 This repo for a Laravel (version 7.24) E-commerce restfull APIs.
 
