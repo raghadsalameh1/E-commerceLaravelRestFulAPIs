@@ -1,6 +1,6 @@
 # E-commerce restful APIs ![version-badge]
 
-This repo for a Laravel (version 7.24) E-commerce restfull APIs.
+This repo for a Laravel (version 7.24) E-commerce restful APIs.
 
 The user in the system can be buyer or seller or both.
 
